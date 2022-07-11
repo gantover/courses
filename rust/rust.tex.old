@@ -1,0 +1,193 @@
+
+\documentclass{report}
+
+%%% Imports %%%
+\usepackage[utf8]{inputenc}
+\usepackage{palatino}
+\usepackage{float}
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+\usepackage[english]{babel}
+\usepackage{amsmath, amssymb, amsthm}
+\usepackage[a4paper, total={6in,10in}]{geometry}
+\usepackage{blindtext}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{empheq}
+\usepackage{mdframed}
+\usepackage{booktabs}
+\usepackage{color}
+\usepackage{psfrag}
+\usepackage{bm}
+\usepackage{tcolorbox}
+\usepackage{bookmark}
+\usepackage{tikz}
+\newcommand{\warning}{
+	{\fontencoding{U}\fontfamily{futs}\selectfont\char 66\relax}
+}
+\setlength{\parindent}{0em}
+\usepackage{silence}
+%Disable all warnings issued by latex starting with "You have..."
+\WarningFilter{latex}{You have requested package}
+%Code listing env
+\usepackage{listings}
+\usepackage{rust_latex/listings-rust}
+\usepackage{xcolor}
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{mystyle}{
+		backgroundcolor=\color{backcolour},   
+		commentstyle=\color{codegreen},
+		keywordstyle=\color{magenta},
+		numberstyle=\tiny\color{codegray},
+		stringstyle=\color{codepurple},
+		basicstyle=\ttfamily\footnotesize,
+		breakatwhitespace=false,         
+		breaklines=true,                 
+		captionpos=b,                    
+		keepspaces=true,                 
+		numbers=left,                    
+		numbersep=5pt,                  
+		showspaces=false,                
+		showstringspaces=false,
+		showtabs=false,                  
+		tabsize=2
+}
+
+\lstset{style=mystyle}
+
+%%% Inkscape Integration %%%
+\usepackage{import}
+\usepackage{pdfpages}
+\usepackage{transparent}
+\usepackage{xcolor}
+
+\newcommand{\incfig}[2][1]{%
+		\def\svgwidth{#1\columnwidth}
+		\import{./figures/}{#2.pdf_tex}
+}
+
+\pdfsuppresswarningpagegroup=1
+
+%%% Define colors %%%%
+\definecolor{Green}{rgb}{0.2,0.9,0.2}
+
+%%% Title and author %%%
+\author{Damian Hubert}
+\title{Rust}
+
+%%% Main Document Space %%%
+\begin{document}
+
+\maketitle
+\tableofcontents
+
+\chapter{Fondamentals}
+
+\section{Cargo}
+\begin{itemize}
+	\item Package manager, Build system, Test runner, Docs generator
+\end{itemize}
+
+\begin{tcolorbox}[title=Creating Project,colback=backcolour]
+\begin{lstlisting}[language=bash]
+cargo new "app name"
+\end{lstlisting}
+\end{tcolorbox}
+
+\begin{itemize}
+	\item \textbf{Cargo.toml} is the config file for the project
+		\begin{itemize}
+			\item \textbf{name} is independent of the directory name 
+			\item \textbf{version} uses semantic versioning, see \href{https://semver.org}{this link} 
+			\item \textbf{authors} should be completed by itself using git credentials 
+		\end{itemize}
+	\item \textbf{src} subdirecory with \textbf{main.rs} 
+\end{itemize}
+
+\begin{tcolorbox}[title=Running a Program,colback=backcolour]
+\begin{lstlisting}[language=bash]
+cargo run
+\end{lstlisting}
+\end{tcolorbox}
+
+Target directory
+\begin{itemize}
+	\item Where cargo outputs all its build artefacts 
+	\item \textbf{To add in .gitignore} 
+\end{itemize}
+
+By default, cargo compiles the project with debug symbols by default
+\begin{tcolorbox}[title=Disable Debug Symbols,colback=backcolour]
+\begin{lstlisting}[language=bash]
+cargo run --release
+# will be a lot faster
+\end{lstlisting}
+\end{tcolorbox}
+
+\section{Variables}
+
+\subsection{Default}
+
+\begin{tcolorbox}[title=Structure,colback=backcolour]
+\begin{lstlisting}[language=rust]
+fn main() {
+	let whatever = 2;
+	// auto
+	let whatever: i32 = 2;
+	// specific type
+}
+\end{lstlisting}
+\end{tcolorbox}
+
+\begin{itemize}
+	\item \textbf{let} declares a variable 
+	\item Rust is a stongly typed language
+		\begin{itemize}
+			\item By default it will be \textbf{auto} 
+			\item But a \textbf{specific} type can be specified
+		\end{itemize}
+\end{itemize}
+
+\begin{itemize}
+	\item \textbf{let} statements can also initialize multiple variables at once, it can de-structure the data
+\end{itemize}
+
+\begin{tcolorbox}[title=Deconstruction Example,colback=backcolour]
+\begin{lstlisting}[language=rust]
+fn main() {
+	let (hello, world) = (8, 50);
+}
+\end{lstlisting}
+\end{tcolorbox}
+
+\subsection{Immutability}
+
+\begin{itemize}
+	\item By default, variables are \textbf{immutable} 
+		\begin{itemize}
+			\item \textbf{To make it mutable} add \textbf{mut} after let
+		\end{itemize}
+\end{itemize}
+
+\subsection{Constants}
+
+\begin{itemize}
+	\item \textbf{const} instead of let
+		\begin{itemize}
+			\item The \textbf{convention} is to use SCREAMING\_NAMES 
+			\item The type annotation is \textbf{required} here !
+		\end{itemize}
+	\item \textbf{Two reasons} to use const
+		\begin{enumerate}
+			\item A const is \textbf{global}  
+			\item They're really \textbf{fast} at compile time
+		\end{enumerate}
+\end{itemize}
+
+
+\end{document}

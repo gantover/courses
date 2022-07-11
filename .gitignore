@@ -1,0 +1,8 @@
+*.pdf
+*.fls
+*.toc
+*.aux
+*.log
+*.fdb_latexmk
+*.synctex.gz
+*/target

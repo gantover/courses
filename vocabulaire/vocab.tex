@@ -1,0 +1,73 @@
+
+\documentclass{article}
+
+%%% Imports %%%
+\usepackage[utf8]{inputenc}
+\usepackage{palatino}
+\usepackage{float}
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+\usepackage[french]{babel}
+\usepackage{amsmath, amssymb, amsthm}
+\usepackage[a4paper, total={7in,10in}]{geometry}
+\usepackage{blindtext}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{empheq}
+\usepackage{mdframed}
+\usepackage{booktabs}
+\usepackage{color}
+\usepackage{psfrag}
+\usepackage{bm}
+\usepackage{tcolorbox}
+\usepackage{bookmark}
+\newcommand{\warning}{
+	{\fontencoding{U}\fontfamily{futs}\selectfont\char 66\relax}
+}
+\setlength{\parindent}{0em}
+
+%%% Inkscape Integration %%%
+\usepackage{import}
+\usepackage{pdfpages}
+\usepackage{transparent}
+\usepackage{xcolor}
+
+\newcommand{\incfig}[2][1]{%
+		\def\svgwidth{#1\columnwidth}
+		\import{./figures/}{#2.pdf_tex}
+}
+
+\pdfsuppresswarningpagegroup=1
+
+%%% Define colors %%%%
+\definecolor{Green}{rgb}{0.2,0.9,0.2}
+
+%%% Title and author %%%
+\author{Damian Hubert}
+\title{Vocabullaire}
+
+%%% Main Document Space %%%
+\begin{document}
+
+\maketitle
+
+\begin{table}[H]
+	\centering
+	\label{tab:label}
+
+	\begin{tabular}{|c|c|}
+		\hline
+		Mot & Definition \\
+		\hline
+		Solfarate &  Terrain volcanique qui dégage des fumerolles sulfureuses. \\
+		\hline
+		concrétion &  Réunion de parties en un corps solide ; ce corps. Concrétion calcaire, pierreuse. \\
+		\hline
+		strie & Petit sillon, rayure ou ligne (quand il y en a plusieurs à peu près parallèles). rainure. \\
+		\hline
+
+		
+	\end{tabular}
+\end{table}
+
+\end{document}

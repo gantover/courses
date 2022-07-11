@@ -1,0 +1,97 @@
+
+\documentclass{article}
+
+%%% Imports %%%
+\usepackage[utf8]{inputenc}
+\usepackage{palatino}
+\usepackage{float}
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+\usepackage[english]{babel}
+\usepackage{amsmath, amssymb, amsthm}
+\usepackage[a4paper, total={6in,10in}]{geometry}
+\usepackage{blindtext}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{empheq}
+\usepackage{mdframed}
+\usepackage{booktabs}
+\usepackage{color}
+\usepackage{psfrag}
+\usepackage{bm}
+\usepackage{tcolorbox}
+\usepackage{bookmark}
+\newcommand{\warning}{
+	{\fontencoding{U}\fontfamily{futs}\selectfont\char 66\relax}
+}
+\setlength{\parindent}{0em}
+
+%%% Inkscape Integration %%%
+\usepackage{import}
+\usepackage{pdfpages}
+\usepackage{transparent}
+\usepackage{xcolor}
+
+\newcommand{\incfig}[2][1]{%
+		\def\svgwidth{#1\columnwidth}
+		\import{./figures/}{#2.pdf_tex}
+}
+
+\pdfsuppresswarningpagegroup=1
+
+%%% Define colors %%%%
+\definecolor{Green}{rgb}{0.2,0.9,0.2}
+
+%%% Title and author %%%
+\author{Damian Hubert}
+\title{Vim}
+
+%%% Main Document Space %%%
+\begin{document}
+
+\maketitle
+% \tableofcontents
+
+\section{Basic Movements}
+
+\begin{itemize}
+	\item \textbf{w} to jump forward by a word 
+	\item \textbf{b} to jump backward by a word 
+	\item \textbf{yy} will yank a line 
+	\item \textbf{dd} will cut a line
+	\item \textbf{p} will paste it one line bellow 
+	\item \textbf{u} will undo last command 
+	\item \textbf{Shift+V} will highlight a line and enter in visual line mode 
+	\item \textbf{v} will enter visual mode 
+	\item Leave insert mode with \textbf{ESC, ctrl+c, ctrl+[ } 
+	\item \textbf{d} operates as a deleter and can be combined with all the other movements
+\end{itemize}
+
+\section{Fondation for Speed}
+\begin{itemize}
+	\item \textbf{o} insert a line and goes into insert mode 
+	\item \textbf{Shift+O} does the same but upwards 
+	\item \textbf{Shift+P} doas the same as \textbf{p} but upwards 
+	\item \textbf{a} to move over and go into insert mode 
+	\item \textbf{Shift+I} to go to the begining of a line and go into insert mode
+	\item \textbf{Shift+A} to go to the end of a line and go into insert mode 
+	\item \textbf{/} allows to search for something
+		\begin{itemize}
+			\item Hop trough results with \textbf{n} 
+			\item \textbf{Shift+N} to reverse
+		\end{itemize}
+	\item \textbf{*} to go to the next occurence of a word 
+	\item \textbf{\#} to go to the previous occurence of a word 
+	\item This can be followed up with n and shift n
+\end{itemize}
+
+\section{vim-surround}
+\begin{itemize}
+	\item \textbf{cs<old><new>} will change surroundings 
+	\item \textbf{ds<old>} will remove delimiters 
+	\item \textbf{ys<count>iw<new>} will add new surroundings to a number of words 
+	\item \textbf{yss<new>} will add surroundings to the entire line 
+	\item \textbf{Shift+S+<new>} while in visual line select mode, will add new surroundings
+\end{itemize}
+
+\end{document}
