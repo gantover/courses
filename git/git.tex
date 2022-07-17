@@ -973,7 +973,9 @@ Your branch is ahead of 'origin/main' by ... commits.
 \end{itemize}
 
 
+
 \chapter{Github Grab Bag: Odds \& Ends}
+
 
 \section{Adding Github Collaborators}
 
@@ -981,6 +983,7 @@ Your branch is ahead of 'origin/main' by ... commits.
 	\item Allowing other users to \textbf{push} to the repo as well as seeing it, but they \textbf{cannot access settings} 
 	\item Repo $\rightarrow$ Settings $\rightarrow$ Manage access
 \end{itemize}
+
 
 \section{READMEs}
 
@@ -994,6 +997,7 @@ Your branch is ahead of 'origin/main' by ... commits.
 		\end{itemize}
 	\item Placed at the root of the repo, Github will automatically display it
 \end{itemize}
+
 
 \section{Markdown Crash Course}
 
@@ -1030,7 +1034,9 @@ Your branch is ahead of 'origin/main' by ... commits.
 \end{itemize}
 
 
+
 \chapter{Git Collaboration Workflows}
+
 
 \section{The Pitfalls Of A Centralized Workflow}
 
@@ -1039,6 +1045,7 @@ Your branch is ahead of 'origin/main' by ... commits.
 	\item Problems : lots of time spent resolving conflicts and merging code, can't work on anything without disturbing the main codebase
 \end{itemize}
 
+
 \section{The All-Important Feature Branch Workflow}
 
 \begin{itemize}
@@ -1046,6 +1053,7 @@ Your branch is ahead of 'origin/main' by ... commits.
 	\item Teammates can collaborate on a single feature without polluting main so no broken code on main 
 	\item We push branches up, and then merge with main
 \end{itemize}
+
 
 \section{Merging Feature Branches}
 
@@ -1057,6 +1065,7 @@ Your branch is ahead of 'origin/main' by ... commits.
 			\item \textbf{Pull Requests!} 
 		\end{enumerate}
 \end{itemize}
+
 
 \section{Introducing Pull Requests}
 
@@ -1072,6 +1081,7 @@ Your branch is ahead of 'origin/main' by ... commits.
 		\end{enumerate}
 \end{itemize}
 
+
 \section{Making A Pull Request}
 
 \begin{itemize}
@@ -1079,6 +1089,7 @@ Your branch is ahead of 'origin/main' by ... commits.
 	\item The branch to merge can still evolute before being merged or rejected 
 	\item It could be a not \textbf{fast-forward} merge
 \end{itemize}
+
 
 \section{Resolving PR Merging Conflicts}
 
@@ -1098,12 +1109,14 @@ git push origin main
 \end{lstlisting}
 \end{tcolorbox}
 
+
 \section{Configuring Branch Protection Rules}
 
 \begin{itemize}
 	\item Settings $\rightarrow$ Branches $\rightarrow$ Branch protection rules 
 	\item We can restrain branch a name pattern 
 \end{itemize}
+
 
 \section{Introducing Forking}
 
@@ -1112,6 +1125,7 @@ git push origin main
 	\item Common for large projects with few maintainers and thousands of contributors 
 	\item Forking : allows to create personal copies of repos : "Forks of the original", it is a Github specific feature
 \end{itemize}
+
 
 \section{The Fork And Clone Workflow}
 
@@ -1132,7 +1146,10 @@ git push origin main
 	 \includegraphics[width=2.5in]{screenshots/2022-07-09T19-19-34Z.png} 
  \end{figure}
 
+
+
 \chapter{Git Rebase}
+
 
 \section{What Is It?}
 
@@ -1164,11 +1181,13 @@ git push origin main
 
 \end{itemize}
 
+
 \section{The Golden Rule: When Not To Rebase}
 
 \begin{itemize}
 	\item Because we are re-writing history : \warning \textbf{Never} Rebase commits that have been shared with others. If you have already pushed commits to github, \textbf{do not} rebase them unless sure that no one is using those commits
 \end{itemize}
+
 
 \section{Handling Conflicts \& Rebasing}
 \begin{itemize}
@@ -1203,7 +1222,10 @@ git push origin main
 	%\item git switch main
 \end{enumerate}
 
+
+
 \chapter{Git Tags}
+
 
 \section{The Idea Between Git Tags}
 
@@ -1225,6 +1247,7 @@ git push origin main
 		\end{itemize}
 \end{itemize}
 
+
 \section{Semantic Versioning}
 
 \begin{itemize}
@@ -1236,12 +1259,14 @@ git push origin main
 		\end{itemize}
 \end{itemize}
 
+
 \section{Viewing Tags}
 
 \begin{itemize}
 	\item \textbf{git tag} by default, will list all the tags in the current directory 
 	\item \textbf{git tag -l "*pattern*"} will list all the tags that have "pattern" in their name, * means any character
 \end{itemize}
+
 
 \section{Comparing Tags With Git Diff}
 
@@ -1255,11 +1280,13 @@ git diff v17.0.0 v17.0.1
 \end{lstlisting}
 \end{tcolorbox}
 
+
 \section{Creating Lightweight Tags}
 
 \begin{itemize}
 	\item \textbf{git tag <tagname>} will default to where the commit HEAD is pointing to
 \end{itemize}
+
 
 \section{Creating Annotated Tags}
 
@@ -1275,17 +1302,20 @@ git diff v17.0.0 v17.0.1
 	\item \textbf{git tag \textit{-a} <tagname> <commit-hash>} 
 \end{itemize}
 
+
 \section{Replacing Tags With Force}
 
 \begin{itemize}
 	\item When the tag does not refer to the good commit, we can use \textbf{git tag <tagname> <commit-hash> -f} 
 \end{itemize}
 
+
 \section{Deleting Tags}
 
 \begin{itemize}
 	\item \textbf{git tag -d <tagname>} 
 \end{itemize}
+
 
 \section{! Pushing Tags}
 
@@ -1294,7 +1324,9 @@ git diff v17.0.0 v17.0.1
 \end{itemize}
 
 
+
 \chapter{Git Behind The Scenes: Hashing \& Objects}
+
 
 \section{Working With The Local Config file}
 
@@ -1303,6 +1335,7 @@ git diff v17.0.0 v17.0.1
 	\item Editing .git/config in a repo will only change things in a specific repo 
 	\item \textbf{git config} will apply changes globally, but \textit{--local} will allow to do it locally
 \end{itemize}
+
 
 \section{Inside Git: The Refs Directory}
 
@@ -1322,6 +1355,7 @@ git diff v17.0.0 v17.0.1
 		\end{itemize}
 \end{itemize}
 
+
 \section{Crash Course On Hashing Functions}
 
 \begin{itemize}
@@ -1337,6 +1371,7 @@ git diff v17.0.0 v17.0.1
 	\item Git uses \textbf{SHA-1} that always output 40-digit hexadecimal numbers
 \end{itemize}
 
+
 \section{Git As A Key-Value Datastore}
 
 \begin{itemize}
@@ -1347,6 +1382,7 @@ git diff v17.0.0 v17.0.1
 	 \centering 
 	 \includegraphics[width=3in]{screenshots/2022-07-10T15-18-37Z.png} 
 \end{figure}
+
 
 \section{Hashing With Git Hash-Objects}
 
@@ -1362,6 +1398,7 @@ echo "hello" | git hash-object --stdin -w
 \end{lstlisting}
 \end{tcolorbox}
 
+
 \section{Retrieving Data With Git Cat-File}
 
 \begin{tcolorbox}[title=Retrieve Data,colback=backcolour]
@@ -1373,11 +1410,13 @@ git cat-file -p <object-hash> > filename.txt
 \end{lstlisting}
 \end{tcolorbox}
 
+
 \section{Git Blobs}
 
 \begin{itemize}
 	\item Git blobs \textit{binary large object} are used to store the contents of files in a given repo. They don't include filenames, just raw content!
 \end{itemize}
+
 
 \section{Git Trees}
 
@@ -1401,6 +1440,7 @@ git cat-file -t hash
 \end{lstlisting}
 \end{tcolorbox}
 
+
 \section{Git Commits}
 
 \begin{itemize}
@@ -1414,7 +1454,9 @@ git cat-file -t hash
 \end{figure}
 
 
+
 \chapter{The Power of Reflogs - Retreiving Lost Work}
+
 
 \section{Introducing Reflogs}
 
@@ -1423,6 +1465,7 @@ git cat-file -t hash
 	\item the reflogs are kept in .git/logs/HEAD which is \textbf{readable}
 \end{itemize}
 
+
 \section{The Limitations Of Reflogs}
 
 \begin{itemize}
@@ -1430,12 +1473,14 @@ git cat-file -t hash
 	\item Reflogs \textbf{expire} (after around 90 days by default) 
 \end{itemize}
 
+
 \section{Reflog Show Command}
 
 \begin{itemize}
 	\item \textbf{git reflog show HEAD} $\equiv$ \textbf{git show} : show is the default subcommand, it will show the log of a specific reference (defaults to HEAD) 
 	\item we could also view logs for the tip of the main branch with \textbf{git reflog show main} 
 \end{itemize}
+
 
 \section{Reflog References}
 
@@ -1453,6 +1498,7 @@ git diff main@{0} main@{yesterday}
 \end{lstlisting}
 \end{tcolorbox}
 
+
 \section{Reflogs Rescue}
 
 \begin{tcolorbox}[title=Rescuing,colback=backcolour]
@@ -1464,6 +1510,7 @@ git reset --hard master@{1}
 # The new tip of the master branch becomes the lost hash1 commit, the commit is back !
 \end{lstlisting}
 \end{tcolorbox}
+
 
 \section{Undoing A Rebase}
 
@@ -1489,7 +1536,9 @@ git reset --hard old_commit
 \end{tcolorbox}
 
 
+
 \chapter{Writing Custom Git Aliases}
+
 
 \section{Global Git Config File}
 
