@@ -1,0 +1,11 @@
+/home/damian/documents/courses/rust/game/target/debug/deps/parking_lot_core-dbbf9e8ed8805eca.rmeta: /home/damian/.cargo/registry/src/github.com-1ecc6299db9ec823/parking_lot_core-0.8.5/src/lib.rs /home/damian/.cargo/registry/src/github.com-1ecc6299db9ec823/parking_lot_core-0.8.5/src/parking_lot.rs /home/damian/.cargo/registry/src/github.com-1ecc6299db9ec823/parking_lot_core-0.8.5/src/spinwait.rs /home/damian/.cargo/registry/src/github.com-1ecc6299db9ec823/parking_lot_core-0.8.5/src/thread_parker/mod.rs /home/damian/.cargo/registry/src/github.com-1ecc6299db9ec823/parking_lot_core-0.8.5/src/util.rs /home/damian/.cargo/registry/src/github.com-1ecc6299db9ec823/parking_lot_core-0.8.5/src/word_lock.rs /home/damian/.cargo/registry/src/github.com-1ecc6299db9ec823/parking_lot_core-0.8.5/src/thread_parker/linux.rs
+
+/home/damian/documents/courses/rust/game/target/debug/deps/parking_lot_core-dbbf9e8ed8805eca.d: /home/damian/.cargo/registry/src/github.com-1ecc6299db9ec823/parking_lot_core-0.8.5/src/lib.rs /home/damian/.cargo/registry/src/github.com-1ecc6299db9ec823/parking_lot_core-0.8.5/src/parking_lot.rs /home/damian/.cargo/registry/src/github.com-1ecc6299db9ec823/parking_lot_core-0.8.5/src/spinwait.rs /home/damian/.cargo/registry/src/github.com-1ecc6299db9ec823/parking_lot_core-0.8.5/src/thread_parker/mod.rs /home/damian/.cargo/registry/src/github.com-1ecc6299db9ec823/parking_lot_core-0.8.5/src/util.rs /home/damian/.cargo/registry/src/github.com-1ecc6299db9ec823/parking_lot_core-0.8.5/src/word_lock.rs /home/damian/.cargo/registry/src/github.com-1ecc6299db9ec823/parking_lot_core-0.8.5/src/thread_parker/linux.rs
+
+/home/damian/.cargo/registry/src/github.com-1ecc6299db9ec823/parking_lot_core-0.8.5/src/lib.rs:
+/home/damian/.cargo/registry/src/github.com-1ecc6299db9ec823/parking_lot_core-0.8.5/src/parking_lot.rs:
+/home/damian/.cargo/registry/src/github.com-1ecc6299db9ec823/parking_lot_core-0.8.5/src/spinwait.rs:
+/home/damian/.cargo/registry/src/github.com-1ecc6299db9ec823/parking_lot_core-0.8.5/src/thread_parker/mod.rs:
+/home/damian/.cargo/registry/src/github.com-1ecc6299db9ec823/parking_lot_core-0.8.5/src/util.rs:
+/home/damian/.cargo/registry/src/github.com-1ecc6299db9ec823/parking_lot_core-0.8.5/src/word_lock.rs:
+/home/damian/.cargo/registry/src/github.com-1ecc6299db9ec823/parking_lot_core-0.8.5/src/thread_parker/linux.rs:

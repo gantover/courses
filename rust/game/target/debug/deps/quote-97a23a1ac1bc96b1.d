@@ -1,0 +1,13 @@
+/home/damian/documents/courses/rust/game/target/debug/deps/quote-97a23a1ac1bc96b1.rmeta: /home/damian/.cargo/registry/src/github.com-1ecc6299db9ec823/quote-1.0.20/src/lib.rs /home/damian/.cargo/registry/src/github.com-1ecc6299db9ec823/quote-1.0.20/src/ext.rs /home/damian/.cargo/registry/src/github.com-1ecc6299db9ec823/quote-1.0.20/src/format.rs /home/damian/.cargo/registry/src/github.com-1ecc6299db9ec823/quote-1.0.20/src/ident_fragment.rs /home/damian/.cargo/registry/src/github.com-1ecc6299db9ec823/quote-1.0.20/src/to_tokens.rs /home/damian/.cargo/registry/src/github.com-1ecc6299db9ec823/quote-1.0.20/src/runtime.rs /home/damian/.cargo/registry/src/github.com-1ecc6299db9ec823/quote-1.0.20/src/spanned.rs
+
+/home/damian/documents/courses/rust/game/target/debug/deps/libquote-97a23a1ac1bc96b1.rlib: /home/damian/.cargo/registry/src/github.com-1ecc6299db9ec823/quote-1.0.20/src/lib.rs /home/damian/.cargo/registry/src/github.com-1ecc6299db9ec823/quote-1.0.20/src/ext.rs /home/damian/.cargo/registry/src/github.com-1ecc6299db9ec823/quote-1.0.20/src/format.rs /home/damian/.cargo/registry/src/github.com-1ecc6299db9ec823/quote-1.0.20/src/ident_fragment.rs /home/damian/.cargo/registry/src/github.com-1ecc6299db9ec823/quote-1.0.20/src/to_tokens.rs /home/damian/.cargo/registry/src/github.com-1ecc6299db9ec823/quote-1.0.20/src/runtime.rs /home/damian/.cargo/registry/src/github.com-1ecc6299db9ec823/quote-1.0.20/src/spanned.rs
+
+/home/damian/documents/courses/rust/game/target/debug/deps/quote-97a23a1ac1bc96b1.d: /home/damian/.cargo/registry/src/github.com-1ecc6299db9ec823/quote-1.0.20/src/lib.rs /home/damian/.cargo/registry/src/github.com-1ecc6299db9ec823/quote-1.0.20/src/ext.rs /home/damian/.cargo/registry/src/github.com-1ecc6299db9ec823/quote-1.0.20/src/format.rs /home/damian/.cargo/registry/src/github.com-1ecc6299db9ec823/quote-1.0.20/src/ident_fragment.rs /home/damian/.cargo/registry/src/github.com-1ecc6299db9ec823/quote-1.0.20/src/to_tokens.rs /home/damian/.cargo/registry/src/github.com-1ecc6299db9ec823/quote-1.0.20/src/runtime.rs /home/damian/.cargo/registry/src/github.com-1ecc6299db9ec823/quote-1.0.20/src/spanned.rs
+
+/home/damian/.cargo/registry/src/github.com-1ecc6299db9ec823/quote-1.0.20/src/lib.rs:
+/home/damian/.cargo/registry/src/github.com-1ecc6299db9ec823/quote-1.0.20/src/ext.rs:
+/home/damian/.cargo/registry/src/github.com-1ecc6299db9ec823/quote-1.0.20/src/format.rs:
+/home/damian/.cargo/registry/src/github.com-1ecc6299db9ec823/quote-1.0.20/src/ident_fragment.rs:
+/home/damian/.cargo/registry/src/github.com-1ecc6299db9ec823/quote-1.0.20/src/to_tokens.rs:
+/home/damian/.cargo/registry/src/github.com-1ecc6299db9ec823/quote-1.0.20/src/runtime.rs:
+/home/damian/.cargo/registry/src/github.com-1ecc6299db9ec823/quote-1.0.20/src/spanned.rs:

@@ -1,0 +1,13 @@
+/home/damian/documents/courses/rust/game/target/debug/deps/lewton-20a6a0ba46013df3.rmeta: /home/damian/.cargo/registry/src/github.com-1ecc6299db9ec823/lewton-0.10.2/src/lib.rs /home/damian/.cargo/registry/src/github.com-1ecc6299db9ec823/lewton-0.10.2/src/header.rs /home/damian/.cargo/registry/src/github.com-1ecc6299db9ec823/lewton-0.10.2/src/header_cached.rs /home/damian/.cargo/registry/src/github.com-1ecc6299db9ec823/lewton-0.10.2/src/huffman_tree.rs /home/damian/.cargo/registry/src/github.com-1ecc6299db9ec823/lewton-0.10.2/src/imdct.rs /home/damian/.cargo/registry/src/github.com-1ecc6299db9ec823/lewton-0.10.2/src/audio.rs /home/damian/.cargo/registry/src/github.com-1ecc6299db9ec823/lewton-0.10.2/src/bitpacking.rs /home/damian/.cargo/registry/src/github.com-1ecc6299db9ec823/lewton-0.10.2/src/inside_ogg.rs /home/damian/.cargo/registry/src/github.com-1ecc6299db9ec823/lewton-0.10.2/src/samples.rs
+
+/home/damian/documents/courses/rust/game/target/debug/deps/lewton-20a6a0ba46013df3.d: /home/damian/.cargo/registry/src/github.com-1ecc6299db9ec823/lewton-0.10.2/src/lib.rs /home/damian/.cargo/registry/src/github.com-1ecc6299db9ec823/lewton-0.10.2/src/header.rs /home/damian/.cargo/registry/src/github.com-1ecc6299db9ec823/lewton-0.10.2/src/header_cached.rs /home/damian/.cargo/registry/src/github.com-1ecc6299db9ec823/lewton-0.10.2/src/huffman_tree.rs /home/damian/.cargo/registry/src/github.com-1ecc6299db9ec823/lewton-0.10.2/src/imdct.rs /home/damian/.cargo/registry/src/github.com-1ecc6299db9ec823/lewton-0.10.2/src/audio.rs /home/damian/.cargo/registry/src/github.com-1ecc6299db9ec823/lewton-0.10.2/src/bitpacking.rs /home/damian/.cargo/registry/src/github.com-1ecc6299db9ec823/lewton-0.10.2/src/inside_ogg.rs /home/damian/.cargo/registry/src/github.com-1ecc6299db9ec823/lewton-0.10.2/src/samples.rs
+
+/home/damian/.cargo/registry/src/github.com-1ecc6299db9ec823/lewton-0.10.2/src/lib.rs:
+/home/damian/.cargo/registry/src/github.com-1ecc6299db9ec823/lewton-0.10.2/src/header.rs:
+/home/damian/.cargo/registry/src/github.com-1ecc6299db9ec823/lewton-0.10.2/src/header_cached.rs:
+/home/damian/.cargo/registry/src/github.com-1ecc6299db9ec823/lewton-0.10.2/src/huffman_tree.rs:
+/home/damian/.cargo/registry/src/github.com-1ecc6299db9ec823/lewton-0.10.2/src/imdct.rs:
+/home/damian/.cargo/registry/src/github.com-1ecc6299db9ec823/lewton-0.10.2/src/audio.rs:
+/home/damian/.cargo/registry/src/github.com-1ecc6299db9ec823/lewton-0.10.2/src/bitpacking.rs:
+/home/damian/.cargo/registry/src/github.com-1ecc6299db9ec823/lewton-0.10.2/src/inside_ogg.rs:
+/home/damian/.cargo/registry/src/github.com-1ecc6299db9ec823/lewton-0.10.2/src/samples.rs:

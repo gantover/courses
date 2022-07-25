@@ -1,0 +1,1 @@
+/home/damian/documents/templates/latex/report_template.cls

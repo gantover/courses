@@ -1,0 +1,12 @@
+/home/damian/documents/courses/rust/game/target/release/deps/libthiserror_impl-d23c96d67484c8d7.so: /home/damian/.cargo/registry/src/github.com-1ecc6299db9ec823/thiserror-impl-1.0.31/src/lib.rs /home/damian/.cargo/registry/src/github.com-1ecc6299db9ec823/thiserror-impl-1.0.31/src/ast.rs /home/damian/.cargo/registry/src/github.com-1ecc6299db9ec823/thiserror-impl-1.0.31/src/attr.rs /home/damian/.cargo/registry/src/github.com-1ecc6299db9ec823/thiserror-impl-1.0.31/src/expand.rs /home/damian/.cargo/registry/src/github.com-1ecc6299db9ec823/thiserror-impl-1.0.31/src/fmt.rs /home/damian/.cargo/registry/src/github.com-1ecc6299db9ec823/thiserror-impl-1.0.31/src/generics.rs /home/damian/.cargo/registry/src/github.com-1ecc6299db9ec823/thiserror-impl-1.0.31/src/prop.rs /home/damian/.cargo/registry/src/github.com-1ecc6299db9ec823/thiserror-impl-1.0.31/src/valid.rs
+
+/home/damian/documents/courses/rust/game/target/release/deps/thiserror_impl-d23c96d67484c8d7.d: /home/damian/.cargo/registry/src/github.com-1ecc6299db9ec823/thiserror-impl-1.0.31/src/lib.rs /home/damian/.cargo/registry/src/github.com-1ecc6299db9ec823/thiserror-impl-1.0.31/src/ast.rs /home/damian/.cargo/registry/src/github.com-1ecc6299db9ec823/thiserror-impl-1.0.31/src/attr.rs /home/damian/.cargo/registry/src/github.com-1ecc6299db9ec823/thiserror-impl-1.0.31/src/expand.rs /home/damian/.cargo/registry/src/github.com-1ecc6299db9ec823/thiserror-impl-1.0.31/src/fmt.rs /home/damian/.cargo/registry/src/github.com-1ecc6299db9ec823/thiserror-impl-1.0.31/src/generics.rs /home/damian/.cargo/registry/src/github.com-1ecc6299db9ec823/thiserror-impl-1.0.31/src/prop.rs /home/damian/.cargo/registry/src/github.com-1ecc6299db9ec823/thiserror-impl-1.0.31/src/valid.rs
+
+/home/damian/.cargo/registry/src/github.com-1ecc6299db9ec823/thiserror-impl-1.0.31/src/lib.rs:
+/home/damian/.cargo/registry/src/github.com-1ecc6299db9ec823/thiserror-impl-1.0.31/src/ast.rs:
+/home/damian/.cargo/registry/src/github.com-1ecc6299db9ec823/thiserror-impl-1.0.31/src/attr.rs:
+/home/damian/.cargo/registry/src/github.com-1ecc6299db9ec823/thiserror-impl-1.0.31/src/expand.rs:
+/home/damian/.cargo/registry/src/github.com-1ecc6299db9ec823/thiserror-impl-1.0.31/src/fmt.rs:
+/home/damian/.cargo/registry/src/github.com-1ecc6299db9ec823/thiserror-impl-1.0.31/src/generics.rs:
+/home/damian/.cargo/registry/src/github.com-1ecc6299db9ec823/thiserror-impl-1.0.31/src/prop.rs:
+/home/damian/.cargo/registry/src/github.com-1ecc6299db9ec823/thiserror-impl-1.0.31/src/valid.rs:

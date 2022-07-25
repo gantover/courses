@@ -81,7 +81,7 @@
 
 %%% Title and author %%%
 \author{Damian Hubert}
-\title{Rust}
+\title{Rust - Level 1}
 %%% Main Document Space %%%
 \begin{document}
 
@@ -112,7 +112,7 @@ cargo new "app name"
 			\item \textbf{version} uses semantic versioning, see \href{https://semver.org}{this link} 
 			\item \textbf{authors} should be completed by itself using git credentials 
 		\end{itemize}
-	\item \textbf{src} subdirecory with \textbf{main.rs} 
+	\item \textbf{src} subdirectory with \textbf{main.rs} 
 \end{itemize}
 
 \begin{tcolorbox}[title=Running a Program,colback=backcolour,size=small,left=4mm]
@@ -121,13 +121,13 @@ cargo run
 \end{lstlisting}
 \end{tcolorbox}
 
-Target directory
+\textbf{Target directory}
 \begin{itemize}
 	\item Where cargo outputs all its build artefacts 
 	\item \textbf{To add in .gitignore} 
 \end{itemize}
 
-By default, cargo compiles the project with debug symbols by default
+By default, cargo compiles the project with debug symbols
 \begin{tcolorbox}[title=Disable Debug Symbols,colback=backcolour,size=small,left=4mm]
 \begin{lstlisting}[language=bash]
 cargo run --release
@@ -153,7 +153,7 @@ fn main() {
 
 \begin{itemize}
 	\item \textbf{let} declares a variable 
-	\item Rust is a stongly typed language
+	\item Rust is a \textbf{strongly typed} language
 		\begin{itemize}
 			\item By default it will be \textbf{auto} 
 			\item But a \textbf{specific} type can be specified
@@ -161,7 +161,7 @@ fn main() {
 \end{itemize}
 
 \begin{itemize}
-	\item \textbf{let} statements can also initialize multiple variables at once, it can de-structure the data
+	\item \textbf{let} statements can also initialize \textbf{multiple} variables at once, it can \textbf{de-structure} the data
 \end{itemize}
 
 \begin{tcolorbox}[title=Deconstruction Example,colback=backcolour,size=small,left=4mm]
@@ -202,7 +202,7 @@ fn main() {
 
 \begin{itemize}
 	\item The scope is the place in the code where we are allowed to use the variables 
-	\item The scope of variable is contained inside its block, and sub-blocks. If a block ends : the variable is \textbf{immediatly} dropped. 
+	\item The scope of variables is contained inside its block, and sub-blocks. If a block ends : the variable is \textbf{immediately dropped} 
 	\item Variables can be \textbf{shadowed}, they're always \textbf{local to their scope}  
 \end{itemize}
 
@@ -223,15 +223,14 @@ fn main() {
 \begin{lstlisting}[language=rust]
 let mut x = 5;
 let x = x; // is now immutable
-// can also be done to modify the type of the variable
+// can also modify the type of the variable
 \end{lstlisting}
 \end{tcolorbox}
 
 
 \section{Memory Safety}
 \begin{itemize}
-	\item Variables must be initialized to a value before compiling 
-	\item The compiler must be sure that the variable will have a value assigned to it
+	\item The \textbf{compiler} must be sure that all variables will have a value assigned to it
 \end{itemize}
 
 
@@ -253,8 +252,8 @@ fn do_stuff() {
 \end{tcolorbox}
 
 \begin{itemize}
-	\item Functions \textbf{parameters} are defined with \textbf{(name: type, other variables)} 
-	\item Specify the return type by adding \textbf{-> type}  
+	\item Functions \textbf{parameters} are defined with \textbf{(name: type,..)} 
+	\item Specify the \textbf{return type} by adding \textbf{-> type}  
 \end{itemize}
 
 \begin{tcolorbox}[colback=backcolour,size=small,left=4mm]
@@ -270,7 +269,7 @@ fn do_stuff(qty: f64, oz: f64) -> f64 {
 \begin{itemize}
 	\item Leaving the ";" off the last expression in a block, will make it be returned as the value of the block
 	\item There isn't support for named arguments, so all the values must be provided in the \textbf{correct order}
-	\item A single function doesn't support variable numbers of arguments or $\not =$ for the same arguments
+	\item A single function doesn't support \textbf{variable} number of arguments or $\not =$ types for the same arguments
 		\begin{itemize} 
 			\item But macro such as \textbf{println!} do ! 
 			\item The name of a macro always end with a "!"
@@ -310,8 +309,8 @@ fn main() {
 \end{tcolorbox}
 
 \begin{itemize}
-  \item Absolute path is library name (same as project), here : \textit{hello}, + scope operator :: and then name of the function 
-  \item We need to add pub in front of the function 
+  \item \textbf{Absolute path} is library name (same as project), here : \textit{hello}, + scope operator :: and then name of the function 
+  \item We need to add \textbf{pub} in front of the function 
   \item Absolute path are \textbf{very long} so \textit{use} comes in handy
 \end{itemize}
 
@@ -319,7 +318,7 @@ fn main() {
 \begin{lstlisting}[language=rust]
 // in main
 use hello::greet;
-// this brings greet into scope for all of main
+// brings greet into scope for all of main
 // hello::greet becomes greet
 
 //we can call the Standard Library with
@@ -328,8 +327,8 @@ use std::collection::HashMap; // example
 \end{lstlisting}
 \end{tcolorbox}
 
-When things are not in the std, we search on crates.io, crate $\equiv$ package, once the name
-and the name and version of the package, we can import it in Cargo.toml
+When things are \textbf{not in the std}, we search on \textbf{crates.io}, crate $\equiv$ package,
+\textbf{import} it in Cargo.toml
 
 \begin{tcolorbox}[title=Cargo.toml,colback=backcolour,size=small,left=4mm]
 \begin{lstlisting}[language=rust]
@@ -347,28 +346,27 @@ pack_name = "0.2.6"
 \section{Scalar Types}
 
 \begin{itemize}
-  \item Integers
+  \item \textbf{Integers}
     \begin{itemize}
-      \item unsigned starts with \textbf{u} 
-      \item signed starts with \textbf{i} 
-      \item they are followed by the number of bits the integer as $2^{3 \rightarrow 7}$ 
-      \item Except for \textbf{usize} is the size of the platform pointer type and can represent
-        every memory address in the process, vectors and arrays usually use it to index 
-      \item \warning all types are not supported on all hardware 
-      \item Int can be specified in a lot of ways : decimal, [0x]hex, [0o]octal, [0b]binary and byte(u8 only)[b'<utf-8 char>']
+      \item \textbf{unsigned} starts with \textbf{u}, \textbf{signed} with \textbf{i} 
+      \item they are \textbf{followed by} the number of bits the integer as $2^{3 \rightarrow 7}$ 
+      \item Exception made for \textbf{usize} which is the size of the platform pointer type and can represent
+        every memory address in the process; vectors and arrays usually use it to index 
+      \item All types are not supported on all hardware 
+      \item Int can be \textbf{specified} in a lot of ways : decimal, [0x]hex, [0o]octal, [0b]binary and byte(u8 only)[b'<utf-8 char>']
       \item They can have any number of "\_" in them, for \textbf{convenience} 
     \end{itemize}
-  \item Float 
+  \item \textbf{Float} 
     \begin{itemize}
-      \item Much simpler : f32, f64 : the \textbf{default}, more precise but can be really slow on $<$ 64bit architecture 
+      \item Much simpler : f32, \textbf{f64} : the \textbf{default}, more precise but can be really slow on $<$ 64bit architecture 
       \item Floating point literals follow the \textbf{IEEE-754} std, we write them like \textit{3.14159} 
     \end{itemize}
-  \item Booleans 
+  \item \textbf{Booleans} 
     \begin{itemize}
       \item \textbf{bool} can be \textbf{true} or \textbf{false} 
       \item \textbf{arithmetic} wont work unless casted like "true as u8"
     \end{itemize}
-  \item Characters
+  \item \textbf{Characters}
     \begin{itemize}
       \item \textbf{char} are always \textbf{4 bytes} -> an array of chars are always UCS-4 / UTF-32 string 
       \item Fairly useless because string are UTF-8 
@@ -379,7 +377,7 @@ pack_name = "0.2.6"
 \begin{tcolorbox}[title=Suffixe variable type,colback=backcolour,size=small,left=4mm]
 \begin{lstlisting}[language=rust]
 let x: u16 = 5;
-// we can also suffix the literal with the wanted type
+// suffix the literal with the wanted type works too
 let x: 5u16; // useful when passing a literal to a generic function that could accept multiple numeric types
 let x: 5_u16;
 \end{lstlisting}
@@ -387,7 +385,7 @@ let x: 5_u16;
 
 \section{Compound Types}
 
-They gather multiple values of other types into one
+  They gather \textbf{multiple values of other types into one}
 
 \begin{itemize}
   \item $\diamond$ \textbf{Tuple} stores multiple values of \textbf{any type} 
@@ -395,16 +393,16 @@ They gather multiple values of other types into one
   \item \textbf{type annotation} : let info: (u8, f64, i32) = (1, 3.3, 999); 
   \item Two ways to \textbf{access members} :
     \begin{enumerate}
-      \item \textbf{dot syntax} let jets = info.0; 
-      \item \textbf{all at once} let (jets, fuel, ammo) = info; \textbf{max 12 arity} 
+      \item \textbf{dot syntax} : let jets = info.0; 
+      \item \textbf{all at once} : let (jets, fuel, ammo) = info; \textbf{max 12 arity} 
       \item \textbf{arity} is the number of elements
     \end{enumerate}
   \item $\diamond $ \textbf{Arrays} elements in contrast has to have to \textbf{same type} 
   \item let buf = [1, 2, 3]; 
   \item let buf = [0; 3]; : value; number 
   \item let buf: [u8; 3] = [1, 2, 3]; 
-  \item \textbf{Indexation} buf[0], array are \textbf{limited} to a size of \textbf{32} 
-  \item Arrays lives on the stack by default and are fixed size so we'll usually use \textbf{Vec} 
+  \item \textbf{Indexation} : buf[0], array are \textbf{limited} to a size of \textbf{32} 
+  \item Arrays lives on the \textbf{stack by default} and are \textbf{fixed size} so we'll usually use \textbf{Vec} 
 \end{itemize}
 
 \section{Control Flow}
@@ -413,14 +411,14 @@ They gather multiple values of other types into one
 \label{sub:If expression}
 
 \begin{itemize}
-  \item Does not need () around the condition $\rightarrow$ 
-  \item The condition \textcolor{red}{must} evaluate to a boolean, rust does not like type coercion 
-  \item An \textbf{expression} means that it returns a value, unlike \textbf{statements} 
+  \item Does not need () around the condition
+  \item The condition \textbf{must} evaluate to a boolean, rust does not like \textbf{type coercion} 
+  \item An \textbf{expression} means that it \textbf{returns a value}, \textbf{unlike statements} 
 \end{itemize}
 
 \begin{tcolorbox}[title=If,colback=backcolour,size=small,left=4mm]
 \begin{lstlisting}[language=rust]
-if num == 5 {  //everything between if and { will be the condition
+if num == 5 {  
   msg = "five";
 } else if num == 4 {
   msg = "four";
@@ -434,9 +432,9 @@ msg = if num == 5 {  //everything between if and { will be the condition
   "four"
 } else {
   "other"
-}; // is only necessary when we use the value of an if expression
-// we cannot use return, because it only applies to function bodies
-// all the block return the same type
+}; // only necessary when we use the value of an if expression
+// cannot use return, it only applies to function bodies
+// all the blocks return the same type
 
 //one line
 num = if a {b} else {c};
@@ -522,7 +520,7 @@ for num in 0..=50 { // [i..n]
   \item \textcolor{red}{\&}\textcolor{cyan}{str} : \textcolor{red}{borrowed} \textcolor{cyan}{string slice} often refers to a string
     which is confusing because the other string type is a \textcolor{blue}{String}  
   \item A litteral string is always a \&str 
-  \item The biggest $\neq$ being that the date is a \&str \textbf{cannot be modified} while the \textbf{String can} 
+  \item The biggest $\neq$ being that the \&str \textbf{cannot be modified} while the \textbf{String can} 
 \end{itemize}
 
 \begin{tcolorbox}[title=Creating String,colback=backcolour,size=small,left=4mm]
@@ -622,8 +620,8 @@ let s2 = s1; // s1 DOES NOT GET COPIED  because only one can own it
 \end{center}
 
 \begin{itemize}
-  \item In order is possible because of fixed size 
-  \item \textbf{LIFO} : last value in is the first value out 
+  \item \textbf{In order} is possible because of \textbf{fixed size} 
+  \item \textbf{LIFO} : \textbf{last} value \textbf{in} is the \textbf{first} value \textbf{out} 
   \item \textbf{Fast} because compact and predictable 
   \item The Heap makes it so we are always hoping arround in memory, flushing
     and reloding the cpu memory cache
@@ -657,10 +655,10 @@ let s2 = s1.clone(); //makes a copy of s1
 
 \begin{itemize}
   \item \textbf{Clone} instead of \textbf{copy} : Clone performs the same initial copy
-    \textbf{but} then it \textbf{also} copoies the \textbf{heap date} and adjust's s2's pointer to it 
+    \textbf{but} then it \textbf{also} copies the \textbf{heap date} and adjust's s2's pointer to it 
     \item Stack + Heap = Value 
     \item Copy only means stack data copy, heap data and pointer updates requires \textbf{cloning} $\equiv $ deep copy 
-    \item Value dropping :
+    \item \textbf{Value dropping} :
       \begin{enumerate}
         \item Run Destructor, immediatly 
         \item Free heap, immediatly 
@@ -707,10 +705,10 @@ fn do_stuff(s: &String) { // the & indicates a reference to a type
 \end{tcolorbox}
 
 \begin{itemize}
-  \item A reference allows a variable to retain the ownership of its value. Only the reference gets  moved into the function 
+  \item A \textbf{reference} allows a variable to \textbf{retain the ownership} of its value. Only the reference gets  moved into the function 
   \item At the \textbf{end} of func, the ref goes out of scope and gets \textbf{dropped}. The borrowing \textbf{ends} 
-  \item When we create a ref to s1, rust creates a ptr to s1, rust handles their creation and destruction. References are only ptr 
-  \item \textbf{Lifetimes} is a rule that \textbf{references must always be valid}, compiler wont let the creation of a reference of the date it is referencing, and no pointing to null 
+  \item When we create a ref to s1, rust creates a ptr to s1, rust handles their creation and destruction. \textbf{References are only ptr}
+  \item \textbf{Lifetimes} is a rule that \textbf{references must always be valid}, compiler wont let the creation of a reference of the data it is referencing, and no pointing to null 
   \item References defaults to \textbf{immutable} 
 \end{itemize}
 
@@ -791,7 +789,7 @@ impl RedFox {
 \end{tcolorbox}
 
 \begin{itemize}
-  \item Methods and Funcs are def in an \textcolor{cyan}{impl}ementation block separate from the struct definition 
+  \item Methods and Funcs are def in an \textbf{impl}ementation block separate from the struct definition 
   \item \textbf{new} is a conventional name for creating a struct with \textbf{default values} 
   \item \textbf{Self} can be used in place of the struct name inside the implementation block 
 \end{itemize}
@@ -824,7 +822,7 @@ impl RedFox { // also in the impl block
 
 \begin{itemize}
   \item Methods always take some form of \textbf{self} as arg 
-  \item There is no stuct \textbf{inheritance}, because we have Traits
+  \item There is no struct \textbf{inheritance}, because we have \textbf{Traits}
 \end{itemize}
 
 \section{Traits}
@@ -888,7 +886,7 @@ trait Run {
   fn run(&self) {
     println!("I'm Running !")
   }
-  }
+}
 
 struct Robot {}
 impl Run for Robot {} // does not overwrite the default run method
@@ -907,6 +905,290 @@ fn main() {
 \end{itemize}
 
 \section{Collections}
+
+\begin{itemize}
+  \item The following \textbf{collections} are all in the \textbf{std}
+  \item \textbf{Vec<T>} : Vector holds a \textbf{bunch of one type}, useful in place of lists or arrays in other lang, most common, they have a \textbf{ton of methods} [insert, remove, split, splice, sort, repeat, binary search,..]
+\end{itemize}
+
+\begin{tcolorbox}[title=Examples,colback=backcolour,size=small,left=4mm]
+\begin{lstlisting}[language=rust]
+let mut v: Vec<i32> = Vec::new(); // vector creation
+v.push(2); // once we have it, we can push some values into it, acts like stack
+v.push(4);
+let x = v.pop(); // x is 4
+println!("{}", v[0]) // "2"
+
+// macro vec! Creating vectors from literal values
+let mut v = vec![2, 4, 6];
+\end{lstlisting}
+\end{tcolorbox}
+
+\begin{itemize}
+  \item \textbf{HashMap<K, V>} generic collection where we specify \textbf{type} for \textbf{key} and \textbf{value} $\equiv $ dictionary 
+  \item Its point is to be able to insert, look up, remove values by key in constant time
+\end{itemize}
+
+\begin{tcolorbox}[title=Examples,colback=backcolour,size=small,left=4mm]
+\begin{lstlisting}[language=rust]
+let mut h: HashMap<u8, bool> = HashMap::new();
+h.insert(5, true);
+h.insert(6, false);
+let have_five = h.remove(&5).unwrap(); // we use remove() to get a value, remove() returns an enum called Option
+\end{lstlisting}
+\end{tcolorbox}
+
+There are a bunch of other collections :
+\begin{itemize}
+  \item \textbf{VecDeque} uses a ring buffer to implement a double-ended queue, able to efficiently add or remove items from the front and the back,
+    but everything else is less efficient than a regular Vec 
+  \item \textbf{LinkedList} has the dubious distinction of being quick at adding or removing items at an arbitrary point in the list, but slow doing anything else
+  \item \textbf{HashSet} Hashing implementation of a set, performing set operations efficiently 
+  \item \textbf{BinaryHeap} is like a priority queue which always pops off the max value
+  \item \textbf{BTreeMap and BTreeSet} are alternate map and set impl using a modified binary tree, \textbf{usecase} over other hash variants if mapping keys or set values to always be sorted is needed
+\end{itemize}
+
+
+\section{Enums}
+
+\begin{itemize}
+  \item \textbf{Enums} $\equiv $ \textbf{Algebraic Data Types}
+\end{itemize}
+
+\begin{tcolorbox}[title=Syntax,colback=backcolour,size=small,left=4mm]
+\begin{lstlisting}[language=rust]
+enum Color { // capital-camel case
+  Red, // names of the variants
+  Green,
+  Blue,
+  }
+let color = Color::Red;
+\end{lstlisting}
+\end{tcolorbox}
+
+Top code works but The real power of rust enums comes from \textbf{associating data and methods with the variants}
+
+\begin{tcolorbox}[colback=backcolour,size=small,left=4mm]
+\begin{lstlisting}[language=rust]
+enum DispenserItem { 
+  Empty, // we can always have a named variant with no data
+  Ammo(u8), // variant can have a single type of data
+  Things(String, i32) // a tuple
+  Place {x: i32, y: i32}, // an anonymous struct of data
+}
+
+use DispenserItem::*;
+let item = Empty;
+//or 
+let item = Things("hat".to_string(), 7);
+// or...
+// we can impl functions and method for enum
+// we could use enum for generics
+\end{lstlisting}
+\end{tcolorbox}
+
+\begin{tcolorbox}[title=Option Enum (Std),colback=backcolour,size=small,left=4mm]
+\begin{lstlisting}[language=rust]
+// We will use this one all the time
+enum Option<T> { // T means any type, we could use any other valid identifier, but the idiomatic thing in rust is to use T or other CAP letter
+  Some(T),
+  None,
+  } // option enum represents when something is present or not, useful when we want to reach of null or nil
+  // you either have some value wrapped in the Some variant or None
+\end{lstlisting}
+\end{tcolorbox}
+
+\begin{tcolorbox}[title=Examples,colback=backcolour,size=small,left=4mm]
+\begin{lstlisting}[language=rust]
+if let Some(x) = my_variable {
+  println!("Value is {}", x);
+  }
+// enums can represent any data, we need to use patters to examine them
+// to check for a single variant, we use the "if let" expression
+// if let : takes pattern that will match one of those variants
+// if pattern match => cond true => var inside the pattern are created
+// Great for one variant but not to handle all at once => Match expr
+\end{lstlisting}
+\end{tcolorbox}
+
+\begin{tcolorbox}[title=Match Expression,colback=backcolour,size=small,left=4mm]
+\begin{lstlisting}[language=rust]
+match my_variable {
+  Some(x) => {
+    println!("value is {}", x); // most of the time blocks
+  },
+  Some(x) => x.squared() + 1, // but func call works too
+  None => {
+    println!("no value :(");
+  },
+}
+_ => { .. // _ is a pattern that match everything, use for default or "anything else" branch
+
+// we could use the return value of that match expr but don't forget the ; at the end
+
+\end{lstlisting}
+\end{tcolorbox}
+
+\begin{itemize}
+  \item The pattern in a match expression \textbf{must be exhaustive} 
+  \item Either \textbf{all} branch need to return Nothing or all need to return the Same type
+\end{itemize}
+
+In depth : \textbf{Option} and \textbf{Result} : they are use all over the std !
+
+\subsection{Option}%
+\label{sub:Option}
+
+\begin{tcolorbox}[colback=backcolour,size=small,left=4mm]
+\begin{lstlisting}[language=rust]
+enum Option<T> {
+  Some(T),
+  None,
+  }  // options is used whenever something might be absent
+
+// to create a non variant to an option
+let mut x: Option<i32> = None;
+// since option and variants are used so much, they're already included in the std prelude, no need to "use"
+x = Some(5); // using option with a concrete type makes the comp infer the type => we can leave off the declaration Option<i32>
+x.is_some(); // true => if x is the Some variant
+x.is_none(); // false
+
+for i in x {
+  println!("{}", i);
+  } // option impl the IntoIterator trait, so can be treated as a vector of 0 or 1 items 
+\end{lstlisting}
+\end{tcolorbox}
+
+\subsection{Result}%
+\label{sub:Result}
+
+\begin{itemize}
+  \item Result is used whenever something might have a useful result or an error 
+  \item Appears a lot in the io module
+\end{itemize}
+
+\begin{tcolorbox}[title=Definition,colback=backcolour,size=small,left=4mm]
+\begin{lstlisting}[language=rust]
+#[must_use] // makes it a compiler warning to silent drop a result
+enum Result<T, E> { // both types are generic but independent
+  Ok(T),
+  Err(E),
+}
+\end{lstlisting}
+\end{tcolorbox}
+
+\begin{tcolorbox}[title=Example,colback=backcolour,size=small,left=4mm]
+\begin{lstlisting}[language=rust]
+use std::fs::File;
+
+fn main() {
+  File::open("foo");
+} // this returns a result since the file might not get opened successfully
+
+// Simplest way to handle error
+fn main() {
+  let res = File::open("foo");
+  //
+  let f = res.unwrap(); // if the result is an Ok then this gives out the wanted file struct, if error, then this crashes to program
+  //
+  let f = res.expect("error message"); // unwrap + crash output message
+  }
+
+// just like Option, there are helper methods like is_ok and is_err
+
+fn main() {
+  let res = File::open("foo");
+if res.is_ok() {
+  let f = res.unwrap(); // here unwrap will never crash
+  }
+}
+// can also do pattern matching
+  match res {
+    Ok(f) => {/* */},
+    Err(e) => {/* */},
+  }
+\end{lstlisting}
+\end{tcolorbox}
+
+
+\section{Closures}
+
+\begin{itemize}
+  \item \textbf{Closures} are encountered when we want to \textbf{spawn a thread}, or do \textbf{functional programming} with iterators and in some other common places in the std 
+  \item It's an anonymous func that can borrow or capture data from the scope it is \textbf{nested} in
+  \item types of args and return value are all inferred from how we use the argument and what we return
+\end{itemize}
+
+\begin{tcolorbox}[title=Syntax,colback=backcolour,size=small,left=4mm]
+\begin{lstlisting}[language=rust]
+let add = |x, y| { x + y } // this creates a callable closure
+
+add(1, 2); // returns 3
+
+// we could have no parameters
+|| { x + y } // the block too but useless
+// a closure will borrow a ref to values in the enclosing scope
+
+\end{lstlisting}
+\end{tcolorbox}
+
+\begin{tcolorbox}[title=Example of closure borrowing,colback=backcolour,size=small,left=4mm]
+\begin{lstlisting}[language=rust]
+let s = "<emoji>".to_string();
+let f = || {
+  println!("{}", s);
+};
+
+f(); // prints <emoji>
+// this is great if our closure never outlives the variable it is referencing,
+// but the compiler won't let us send this over to another thread because it might longer than this thread
+// Fortunately, closures support move semantics, so we can force to move any var it uses into itself and take ownership of them
+let f = move || { // now s in owned by the closure, it'll live until death of the closure
+\end{lstlisting}
+\end{tcolorbox}
+
+\begin{tcolorbox}[title=Functionnal Programming Example,colback=backcolour,size=small,left=4mm]
+\begin{lstlisting}[language=rust]
+let mut = vec![2, 4, 6];
+
+v.iter() // get vector iterator, now we have lots of methods using closures available
+  .map(|x| x * 3) // multiply each item by 3
+  .filter(|x| *x > 10) // discard any value not greater than 10
+  .fold(0, |acc, x| acc + x); // with initial value and closure to sum remaining values together
+\end{lstlisting}
+\end{tcolorbox}
+
+
+\section{Threads}
+
+\begin{itemize}
+  \item Rust threading is \textbf{portable}
+\end{itemize}
+
+\begin{tcolorbox}[title=Fully functional example,colback=backcolour,size=small,left=4mm]
+\begin{lstlisting}[language=rust]
+use std::thread;
+
+fn main() {
+  let handle = thread::spawn(move || { // thread::spawn takes closure w/o args, closure gets exec as the main function of the thread
+    // do stuff in a child thread, common practice is to call a function here
+  });
+  // do stuff simultaneously in the main thread
+
+  // wait until thread has exited
+  handle.join().unwrap(); // spawn returns a join handle, we can call it, ant it'll pause the thread that we're joining has completed and exited
+  }
+\end{lstlisting}
+\end{tcolorbox}
+
+\begin{itemize}
+  \item The spawned thread could have an error or a panic, or could return a value successfully back to the thread that joins it 
+  \item What we get from the \textbf{join call} is a result that \textbf{wraps} a possible success value returned from the thread or an error if thread panic 
+  \item Treading is heavyweight. Creating a new one allocates an os-dependent amount of RAM for the thread's own stack, often mb's. 
+    Whenever a CPU switches from running one thread to another, it has to do an expensive context switch. the \textbf{More threads} sharing same CPU core = the \textbf{More overhead} we'll have in context switching 
+    \item Threads are a fantastic tool when cpu and memory are needed concurrently $\rightarrow$ They can run simultaneously on multi cores and do more work 
+    \item However if we are just waiting for something like disk, network io, then look into \textbf{async/await} 
+\end{itemize}
 
 \end{multicols*}
 

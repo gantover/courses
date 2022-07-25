@@ -1,0 +1,11 @@
+/home/damian/documents/courses/rust/game/target/release/deps/slice_deque-04f50cf387b8996d.rmeta: /home/damian/.cargo/registry/src/github.com-1ecc6299db9ec823/slice-deque-0.3.0/src/lib.rs /home/damian/.cargo/registry/src/github.com-1ecc6299db9ec823/slice-deque-0.3.0/src/macros.rs /home/damian/.cargo/registry/src/github.com-1ecc6299db9ec823/slice-deque-0.3.0/src/mirrored/mod.rs /home/damian/.cargo/registry/src/github.com-1ecc6299db9ec823/slice-deque-0.3.0/src/mirrored/buffer.rs /home/damian/.cargo/registry/src/github.com-1ecc6299db9ec823/slice-deque-0.3.0/src/mirrored/linux.rs
+
+/home/damian/documents/courses/rust/game/target/release/deps/libslice_deque-04f50cf387b8996d.rlib: /home/damian/.cargo/registry/src/github.com-1ecc6299db9ec823/slice-deque-0.3.0/src/lib.rs /home/damian/.cargo/registry/src/github.com-1ecc6299db9ec823/slice-deque-0.3.0/src/macros.rs /home/damian/.cargo/registry/src/github.com-1ecc6299db9ec823/slice-deque-0.3.0/src/mirrored/mod.rs /home/damian/.cargo/registry/src/github.com-1ecc6299db9ec823/slice-deque-0.3.0/src/mirrored/buffer.rs /home/damian/.cargo/registry/src/github.com-1ecc6299db9ec823/slice-deque-0.3.0/src/mirrored/linux.rs
+
+/home/damian/documents/courses/rust/game/target/release/deps/slice_deque-04f50cf387b8996d.d: /home/damian/.cargo/registry/src/github.com-1ecc6299db9ec823/slice-deque-0.3.0/src/lib.rs /home/damian/.cargo/registry/src/github.com-1ecc6299db9ec823/slice-deque-0.3.0/src/macros.rs /home/damian/.cargo/registry/src/github.com-1ecc6299db9ec823/slice-deque-0.3.0/src/mirrored/mod.rs /home/damian/.cargo/registry/src/github.com-1ecc6299db9ec823/slice-deque-0.3.0/src/mirrored/buffer.rs /home/damian/.cargo/registry/src/github.com-1ecc6299db9ec823/slice-deque-0.3.0/src/mirrored/linux.rs
+
+/home/damian/.cargo/registry/src/github.com-1ecc6299db9ec823/slice-deque-0.3.0/src/lib.rs:
+/home/damian/.cargo/registry/src/github.com-1ecc6299db9ec823/slice-deque-0.3.0/src/macros.rs:
+/home/damian/.cargo/registry/src/github.com-1ecc6299db9ec823/slice-deque-0.3.0/src/mirrored/mod.rs:
+/home/damian/.cargo/registry/src/github.com-1ecc6299db9ec823/slice-deque-0.3.0/src/mirrored/buffer.rs:
+/home/damian/.cargo/registry/src/github.com-1ecc6299db9ec823/slice-deque-0.3.0/src/mirrored/linux.rs:
